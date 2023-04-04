@@ -1,7 +1,49 @@
 .profile{
     width: 150px;
     height: 150px; 
-    display: block;
-    margin-left: auto; 
-    margin-right: auto;
+
+}
+.h1S{
+    border-bottom: 2px solid gray; 
+    padding-bottom : 10px; 
+    margin-bottom : 0px
+}
+#grid {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+}
+.olS{
+    border-right : 2px solid gray; 
+    padding-right : 10px; width : 100px; 
+    margin-top : 0px;border-bottom : 2px solid gray; 
+    padding-top : 10px;padding-bottom : 10px"
+}
+.divS{
+    width: 400px; 
+    border-right : 2px solid gray; 
+    border-bottom : 2px solid gray
+}
+@media(max-width:650px){
+    #grid{
+        display : block;
+    }
+    .olS{
+        border-right : none ;
+        padding-right : 10px; 
+        width : 100px; 
+        margin-top : 0px;
+        border-bottom : none ; 
+        padding-top : 10px;
+        padding-bottom : 10px
+    }
+    .divS{
+        width: 400px; 
+        border-right : none ; 
+        border-bottom : none ;
+    }
+    .h1S{
+        border-bottom: none; 
+        padding-bottom : 10px; 
+        margin-bottom : 0px
+    }
 }
