@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,23 +8,40 @@
     <link rel="stylesheet" href="main.css">
     <title>자기 소개</title>
 </head>
+
 <body>
-    <h1 class = "h1S"><a href = "main.html">규민Home</a></h1>
+    <div id=grid style="grid-template-columns: 170px 1fr;">
+        <h1 class='h1S' style='width: 180px;'><a href="main.html">규민Home</a></h1>
+        <div style=" padding-top : 35px">
+            <input type="button" value="Dark_mod" onclick="
+            document.querySelector('body').style.backgroundColor = '#1c1f21';
+            document.querySelector('body').style.color = '#c3d5e6'
+            ">
+            <input type="button" value="White_mod" onclick="
+            document.querySelector('body').style.backgroundColor = 'white'
+            document.querySelector('body').style.color = 'black'
+            ">
+        </div>
+    </div>
+
+
 
     <div id="grid">
-        <ol class = "olS">
-            <li><a href = "1.html">자기 소개</a></li>
-            <li><a href = "2.html">학교 소개</a></li>
-            <li><a href = "3.html">동아리 소개</a></li>
+        <ol class="olS">
+            <li><a href="1.html">자기 소개</a></li>
+            <li><a href="2.html">학교 소개</a></li>
+            <li><a href="3.html">동아리 소개</a></li>
         </ol>
         <div class="divS">
-            <img class="profile" src="Profile.jpg" alt="규민이 사진!!" >
+            <img class="profile" src="Profile.jpg" alt="규민이 사진!!">
             <h3>도규민</h3>
             <p>영진고등학교 3학년 5반 3번</p>
-            <p>저는 영진고등학교 재학생, <br><span style = "color : purple; font-weight: bolder; text-decoration: underline;">마호돌 선생님</span>의 수업을 듣는 도규민 입니다!!</p>
+            <p>저는 영진고등학교 재학생, <br><span style="color : purple; font-weight: bolder; text-decoration: underline;">마호돌
+                    선생님</span>의 수업을 듣는 도규민 입니다!!</p>
 
         </div>
     </div>
 
 </body>
+
 </html>

@@ -8,37 +8,24 @@
     <title>실습 1</title>
     <link rel="stylesheet" href="main.css">
 
-    <style>
-        @media(max-width:650px){
-            #grid{
-                display : block;
-            }
-            .olS{
-                border-right : none ;
-                padding-right : 10px; 
-                width : 100px; 
-                margin-top : 0px;
-                border-bottom : none ; 
-                padding-top : 10px;
-                padding-bottom : 10px
-            }
-            .divS{
-                width: 400px; 
-                border-right : none ; 
-                border-bottom : none ;
-            }
-            .h1S{
-                border-bottom: none; 
-                padding-bottom : 10px; 
-                margin-bottom : 0px
-            }
-        }
-    </style>
+
 </head>
 
 <body>
-    <h1 class = 'h1S'><a href="main.html">규민Home</a>
-    </h1>
+    <div id = grid style="grid-template-columns: 170px 1fr;">
+        <h1 class = 'h1S' style = 'width: 180px;'><a href="main.html">규민Home</a></h1>
+        <div style=" padding-top : 35px">
+            <input type="button" value="Dark_mod" onclick = "
+            document.querySelector('body').style.backgroundColor = '#1c1f21';
+            document.querySelector('body').style.color = '#c3d5e6'
+            ">
+            <input type="button" value="White_mod" onclick = "
+            document.querySelector('body').style.backgroundColor = 'white'
+            document.querySelector('body').style.color = 'black'
+            ">
+        </div>
+    </div>
+
     <div id = "grid">
         <ol class = "olS">
             <li><a href="1.html">자기 소개</a></li>
