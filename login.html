@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="1.css">
+    <title>로그인</title>
+</head>
+
+<body>
+    <header class="header" role="banner">
+        <div class="header_inner">
+            <a href="https://www.naver.com" class="logo">
+                <h1 class="blind">NAVER</h1>
+            </a>
+            <div class="lang" id="show_locale_switch">
+                <select id="locale_switch" name="locale_switch" title="언어선택" class="sel">
+                    <option value="ko_KR">한국어</option>
+                    <option value="en_US">English</option>
+                    <option value="zh-Hans_CN">中文(简体)</option>
+                    <option value="zh-Hant_TW">中文(台灣)</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+
+
+    <div class="login_wrap">
+
+
+        <ul class="panel_wrap">
+            <li class="panel_item" style="display: block;">
+                <div class="panel_inner" role="tabpanel" aria-controls="loinid">
+                    <div class="id_pw_wrap">
+                        <div class="input_row" id="id_line">
+                            <div class="icon_cell" id="id_cell">
+                                <span class="icon_id">
+                                    <span class="blind">아이디</span>
+                                </span>
+                            </div>
+                            <input type="text" id="id" name="id" placeholder="아이디" title="아이디" class="input_text"
+                                maxlength="41" value="" />
+
+                        </div>
+                        <div class="input_row" id="pw_line">
+                            <div class="icon_cell" id="pw_cell">
+                                <span class="icon_pw">
+                                    <span class="blind">비밀번호</span>
+                                </span>
+                            </div>
+                            <input type="password" id="pw" name="pw" placeholder="비밀번호" title="비밀번호" class="input_text"
+                                maxlength="16" />
+                            <span role="button" class="btn_delete" id="pw_clear" style="display: none;">
+                                <span class="icon_delete">
+                                    <span class="blind">삭제</span>
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="btn_login_wrap">
+
+                        <button type="submit" class="btn_login" id="log.login">
+                            <span class="btn_text">로그인</span>
+                        </button>
+
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
